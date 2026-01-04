@@ -9,10 +9,9 @@ class menu
 {
   public:
     menu();
-   
-    int selection();
-    
-    void run(int typei);
+    ~menu() = default;
+
+    void run(int type);
 
     
   private:

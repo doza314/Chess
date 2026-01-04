@@ -6,6 +6,7 @@ class button
 {
     public:
         button(char type);
+        ~button() = default;
         
     private: 
         int pos[2]; 
