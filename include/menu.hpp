@@ -1,36 +1,28 @@
+#pragma once
+
 #include <iostream>
 #include <string>
-#include "SFML/Graphics.hpp"
-#include "SFML/Window.hpp"
+#include <SFML/Window.hpp>
+#include <SFML/Graphics.hpp>
 
 class menu
 {
   public:
-    menu()
-    {
-    };
+    menu();
    
-    int selection(int x, int y)
-    {
-
-    };
+    int selection();
     
-    void run()
-    {
+    void run(int typei);
 
-      sf::RenderWindow menuwindow(sf::VideoMode(400, 300), "CHESS");
-      sf::RectangleShape background(sf::Vector2f(400, 300));
-      background.setFillColor(sf::Color(255, 255, 255, 128));
-      background.SetPosition(0, 0);
-        
-
-      sf::Sprite logo;
-      sf::Texture logoTexture;
-
-      logoTexture.loadFromFile(resDir + "logo.png");
-
-    };
-
+    
   private:
-    std::string resDir = "res/";
+    static std::string resDir;
+    sf::RenderWindow menuWindow;
+    sf::RectangleShape menuBackground;
+
+    sf::Sprite logo;
+    sf::Texture logoTexture; 
+    
+    sf::Sprite gameOver;
+    sf::Texture gameOverTexture;
 }; 

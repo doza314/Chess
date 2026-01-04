@@ -1,10 +1,15 @@
-#include "Chess.hpp"
+#include "game.hpp"
 #include "piece.hpp"
-
-#include <iostream>
+#include "menu.hpp"
 
 int main()
 {
-  std::cout<<"Hello"<<std::endl; 
-  return 0;
-};
+    menu M; //contains buttons, returns info used in game object
+    game G; //
+
+    while (true)
+    {
+        
+    } 
+    return 0;
+}

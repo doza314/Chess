@@ -1,8 +1,11 @@
-#include "Chess.hpp"
+#include "game.hpp"
 #include "piece.hpp"
 
 #include <iostream>
 #include <vector>
 #include <cmath>
-#incldue "SFML/Graphics.hpp"
+#include <SFML/Graphics.hpp>
+#include <SFML/Window.hpp>
+
+
      
